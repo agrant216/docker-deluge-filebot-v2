@@ -4,7 +4,7 @@ MAINTAINER agrant216
 # install filebot
 #############
 
-RUN pacman -Syyu --noconfirm jre8-openjdk-headless sudo
+RUN pacman -Syyu --noconfirm jre11-openjdk-headless sudo
 
 RUN mkdir filebot && cd filebot
 
