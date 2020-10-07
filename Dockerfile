@@ -8,9 +8,9 @@ RUN pacman -Syyu --noconfirm jre8-openjdk-headless sudo
 
 RUN mkdir filebot && cd filebot
 
-RUN sh -xu <<< "$(curl -fsSL https://raw.githubusercontent.com/filebot/plugins/master/installer/tar.sh)"
+RUN sh -xu <<< "filebot.sh"
 
-RUN ln -sf /filebot/filebot.sh /usr/bin/filebot
+#RUN ln -sf /filebot/filebot.sh /usr/bin/filebot
 
 # Entrypoint
 #################
