@@ -8,7 +8,7 @@ RUN pacman -Syyu --noconfirm jre8-openjdk-headless sudo
 
 RUN mkdir filebot && cd filebot
 
-RUN sh -xu <<< "filebot.sh"
+RUN sh -xu "filebot.sh"
 
 #RUN ln -sf /filebot/filebot.sh /usr/bin/filebot
 
