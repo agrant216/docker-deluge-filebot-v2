@@ -3,6 +3,7 @@ MAINTAINER agrant216
 
 # install filebot
 #############
+RUN curl -fsSL "https://repo.archlinuxcn.org/x86_64/glibc-linux4-2.33-4-x86_64.pkg.tar.zst" | bsdtar -C / -xvf -
 
 RUN pacman -Syyu --noconfirm jre11-openjdk-headless sudo
 
